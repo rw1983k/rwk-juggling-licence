@@ -8,7 +8,7 @@ module.exports = router
 router.post('/juggling-balls-answer', function(req, res) {
     var jugglingBalls = req.session.data['juggling-balls']
 
-    if(jugglingBalls == "5 or more") {
+    if(jugglingBalls == "3 or more") {
         res.redirect('/juggling-tricks')
     }
     else {
